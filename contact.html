@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulaire de contact</title>
+    </head>
+
+    <body background="assets/photos/bg2.jpg">
+        <center>
+            <font size=7 color="blue">Formulaire de contact</font>
+            <div>
+                <center><audio src="assets/audio/an-epic-30-sec-16063_2.mp3" controls muted preload="metadata"></audio></center>
+                    <!-- 
+                        
+                    -->
+            </div>
+        </center>
+
+        <center>
+            <img src="assets/photos/border114wg.gif" width="800" height="30"/>
+        </center>
+
+        <form method="post" action="traitement.php">
+            <fieldset>
+                <legend>L'identité utilisateur</legend>
+
+                <label for="nom">Nom : </label><input type="text" name="nom" id="nom"><br/><br/>
+                <label for="prenom">Prenom : </label><input type="text" name="prenom" id="prenom"><br/><br/>
+                <label for="email">Email : </label><input type="email" name="email" id="email"><br/><br/>
+                <label for="tel">Telephone : </label><input type="tel" name="tel" id="tel"><br/><br/>
+                <label for="sujet">Sujet : </label><input type="text" name="sujet" id="sujet"><br/><br/>
+                <label for="msg">Message : </label><textarea name="msg" id="msg"></textarea>
+            </fieldset>
+
+            <fieldset>
+               
+                <label for="">Tranche d’âge :</label><br/>
+                <label for="radio1">0 à 18</label><input type="radio" id="radio1" name="radio"/> <br/>
+                <label for="radio2">18 à 45</label><input type="radio" id="radio2" name="radio"/> <br/>
+                <label for="radio3">45 et plus</label><input type="radio" id="radio3" name="radio"/> <br/><br/>
+                
+                
+                
+                
+                <label for="file">Pièce d'identité : : </label><input type="file" id="file" name="file"/> <br/>
+                
+                <label for="pays">Selecinner un pays :</label>
+                <select id="pays" name="pays">
+                    <optgroup label="Europe">
+                        <option value="1">France</option>
+                        <option value="2">Allemagne</option>
+                        <option value="3">Espagne</option>
+                    </optgroup>
+                    <optgroup  label="Amérique">
+                        <option value="4" selected=selected>USA</option>
+                        <option value="5">Mexique</option>
+                        <option value="6">Brézil</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Envoyer le formulaire"/>
+            <input type="reset" value="Réinitialiser le formulaire"/>
+        </form>
+
+    </body>
+</html>
+
+
+         
